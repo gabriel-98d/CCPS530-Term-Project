@@ -35,7 +35,7 @@ https://streamable.com/8hqz4v
 - weatherapp.ejs  
 
 
-Once successfully logged in, user will have access to localhost to 'http://localhost:3000/weatherapp' where they can see weather related info for cities mentioned above.
+Once successfully logged in, user will have access to 'http://localhost:3000/weatherapp' where they can see weather related info for cities mentioned above.
 
 
 
