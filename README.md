@@ -38,4 +38,7 @@ https://streamable.com/8hqz4v
 Once successfully logged in, user will have access to 'http://localhost:3000/weatherapp' where they can see weather related info for cities mentioned above.
 
 
+User information (password is hashed) is consequently stored in a MongoDB collection called 'users'.
+
+
 
