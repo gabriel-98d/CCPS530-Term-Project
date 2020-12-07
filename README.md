@@ -17,3 +17,12 @@ Option 2 - Weather Service Application
 Video Demo of the Weather App\
 https://streamable.com/8hqz4v
 
+
+Package.json exemplifies which dependencies (packages) are requried for running this project:
+\As follows:\ body-parser, ejs, express, express-session, mongoose, passport-local, passport-local-mongoose
+
+App.js initializes port 3000 server and routes following views (contained in view folder)\
+home.ejs\register.ejs\login.ejs\weatherapp.ejs
+
+
+
