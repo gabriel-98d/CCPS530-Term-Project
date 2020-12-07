@@ -22,12 +22,12 @@ Package.json exhibits which dependencies (packages) are requried for running thi
 
 As follows:  
  body-parser  
- ejs
- express
- express-session 
- mongoose
- passport-local
- passport-local-mongoose
+ ejs  
+ express  
+ express-session   
+ mongoose  
+ passport-local  
+ passport-local-mongoose  
 
 App.js initializes port 3000 server and routes following views (contained in view folder)\
 home.ejs\register.ejs\login.ejs\weatherapp.ejs
