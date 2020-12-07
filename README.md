@@ -18,8 +18,16 @@ Video Demo of the Weather App\
 https://streamable.com/8hqz4v
 
 
-Package.json exemplifies which dependencies (packages) are requried for running this project:\
-As follows:\ body-parser, ejs, express, express-session, mongoose, passport-local, passport-local-mongoose
+Package.json exhibits which dependencies (packages) are requried for running this project with node  
+
+As follows:  
+ body-parser  
+ ejs
+ express
+ express-session 
+ mongoose
+ passport-local
+ passport-local-mongoose
 
 App.js initializes port 3000 server and routes following views (contained in view folder)\
 home.ejs\register.ejs\login.ejs\weatherapp.ejs
