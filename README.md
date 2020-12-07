@@ -18,9 +18,7 @@ Video Demo of the Weather App\
 https://streamable.com/8hqz4v
 
 
-Package.json exhibits which dependencies (packages) are requried for running this project with node  
-
-**As follows:**  
+**Package.json exhibits which dependencies (packages) are required for running this project with node**     
 
  - body-parser  
  - ejs  
@@ -30,8 +28,14 @@ Package.json exhibits which dependencies (packages) are requried for running thi
  - passport-local  
  - passport-local-mongoose  
 
-App.js initializes port 3000 server and routes following views (contained in view folder)\
-home.ejs\register.ejs\login.ejs\weatherapp.ejs
+**App.js initializes port 3000 server and routes following views (contained in view folder)**  
+- home.ejs  
+- register.ejs  
+- login.ejs  
+- weatherapp.ejs  
+
+
+Once successfully logged in, user will have access to localhost to 'http://localhost:3000/weatherapp' where they can see weather related info for cities mentioned above.
 
 
 
