@@ -20,7 +20,7 @@ https://streamable.com/8hqz4v
 
 Package.json exhibits which dependencies (packages) are requried for running this project with node  
 
-**As follows:  **
+**As follows:**  
 
  body-parser  
  ejs  
