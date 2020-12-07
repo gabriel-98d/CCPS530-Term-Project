@@ -14,21 +14,21 @@ Option 2 - Weather Service Application
     This web site should support a certain level of security. In order to use this site there should be login to
     access this site.
 
-Includes:
+Includes:<br/><br/>
 
-  >App.js
+  >App.js<br/>
 
-  -Views
-    -background
-      >cloud.png
-      >sky.jpg
-    -icons
-      >{18 png images for weather description}
-    >home.ejs
-    >login.ejs
-    >register.ejs
-    >weatherapp.ejs
-    >style.css
+  -Views<br/><br/>
+    -background<br/>
+      >cloud.png<br/>
+      >sky.jpg<br/>
+    -icons<br/>
+      >{18 png images for weather description}<br/>
+    >home.ejs<br/>
+    >login.ejs<br/>
+    >register.ejs<br/>
+    >weatherapp.ejs<br/>
+    >style.css<br/>
 
   
 
