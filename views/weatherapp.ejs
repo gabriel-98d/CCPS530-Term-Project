@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App Project</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+<div class = container>
+    <hr>
+    <h1 id="fancy-bg">CCPS530 Weather Service <br> by Gabriele D'Antonio (500776148) </h1>
+    <hr>
+
+    <div class = "row">
+    <button class = "button" style = "vertical-align: middle">Click here to get up-to-date weather data for some of the world's top cities:</button>
+
+    </div>
+
+
+    
+    <div class="row" id="weather-info"></div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    
+</div>
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+
+    // Register for a free API key at openweathermap.org and paste it below 
+    const apiKey = '********************************';
+    
+    let cities_ID = '6167865,5125771,3451190,3441575,2988507,2950159,3169070,360630,1835848,1796236,1850147';
+    let url = `http://api.openweathermap.org/data/2.5/group?id=${cities_ID}&units=metric&appid=${apiKey}`
+    
+    $(document).ready(function(){
+      $("button").click(function(){
+        $.getJSON(url, function(weather_data){
+            var output = "";
+            for (i=0; i< weather_data.list.length; i++) {
+      
+                
+            let W = weather_data.list[i];
+    
+            console.log("Weather related info. successfully gathered for: " + W.name  + " " + W.sys.country);
+            output +=
+            `
+                <div class="col-4">
+                    <div class="card">                 
+                        <div class="card-body">
+                            <h5 class="card-title">${W.name},  ${W.sys.country}</h5>
+    
+                            <div id = "weather-desc"> ${W.weather[0].main} 
+                                
+                            <img src = icons/${W.weather[0].icon}@2x.png style = "float:right">
+                            </div>
+    
+                            <div>Temperature:  ${W.main.temp} °C </div>
+                            <div>Feels Like:  ${W.main.feels_like} °C </div>
+                            <pre>Low: ${W.main.temp_min}°C | High: ${W.main.temp_max}°C</pre>
+                            <div>Wind: ${W.wind.speed} m/s </div>
+    
+    
+                            <hr>
+    
+                        </div>
+                        <img>
+                    </div>
+                </div>
+            `
+                
+        }
+        $("#weather-info").html(output)
+        
+    
+        });
+      });
+    });
+    </script>
+
+
+</body>
+</html>

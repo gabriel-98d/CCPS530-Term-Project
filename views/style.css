@@ -1,0 +1,108 @@
+h1 {
+    font-size: 40px;
+}
+
+
+li {
+font-size: 35px;
+margin-bottom: 20px;
+list-style-type: none;
+}
+
+h3 {
+  font-size: 32px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: aquamarine;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h5{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+body {
+  background-color: rgb(189, 167, 167);
+  background-image: url("background/cloud.png");
+
+}
+
+
+label {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+#weather-desc{
+    font-size: 22px;
+    font-family: monospace;
+
+}
+
+#fancy-bg {
+  background-image: url("/background/sky.jpg");
+  background-repeat: no-repeat;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: mintcream;
+  text-align: center;
+}
+
+
+
+pre {
+    font-size: 13px;
+}
+.card{
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+  .button1{
+    font-size: 25px;
+    padding: 15px 32px;
+  }
